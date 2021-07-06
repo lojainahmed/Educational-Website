@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html>
+<head >
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" >
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<title>educational website</title>
+<style>
+@import 
+@import url (https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+#section{
+margin-top:80px;
+margin-bottom:0px;
+  font-weight: 500;
+}
+.section1{
+  background:#eeeeee;
+}
+
+svg {
+    display: block;
+    font: 9.5em 'Montserrat';
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #4D163D;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #840037;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #BD0034;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #BD0034;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #FDB731;
+	animation-delay: -5s;
+}
+.textt-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.textt-copy:nth-child(1){
+	stroke: #4D163D;
+	animation-delay: -1;
+}
+
+.textt-copy:nth-child(2){
+	stroke: #840037;
+	animation-delay: -2s;
+}
+
+.textt-copy:nth-child(3){
+	stroke: #BD0034;
+	animation-delay: -3s;
+}
+
+.textt-copy:nth-child(4){
+	stroke: #BD0034;
+	animation-delay: -4s;
+}
+
+.textt-copy:nth-child(5){
+	stroke: #FDB731;
+	animation-delay: -5s;
+}
+
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+*
+{
+margin:0
+padding:0;
+box-sizing:border-box;
+
+}
+
+.clear{
+clear:both;
+}
+.testimonial
+{
+font-family:'josefin sans',sans-serif;
+width:720px;
+height:auto;
+margin-top:0;
+margin:120px auto;
+margin-top:0;
+margin-bottom:30px;
+
+
+}
+.testimonial .item
+{
+width:220px;
+margin:0 10px;
+float:left;
+background:#29ca8e;
+box-shadow:0  0 5px rgba(0,0,0,0.125);
+border-radius: 25px;
+
+}
+.testimonial .item .img
+{
+
+padding:20px;
+}
+.testimonial .item .img img
+{
+
+width:140px;
+height:140px;
+display:block;
+margin:0 auto;
+border-radius: 15px;
+}
+.testimonial .item .name{
+margin-bottom:20px;
+text-align:center;
+text-transform:uppercase;
+letter-spacing:3px;
+}
+.testimonial .item  .content
+{
+background:#FFF;
+padding:20px;
+border-bottom-left-radius:25px;
+border-bottom-right-radius:25px;
+border-top-left-radius:20px;
+border-top-left-radius:20px;
+text-align:center;
+}
+.testimonial .item  .content h1{
+margin-bottom:10px;
+color:#29ca8e;
+}
+.testimonial .item  .content p
+{
+line-height:20px;
+margin-bottom:15px;
+}
+.testimonial .item  .content .stars img
+{
+width:25px;
+height:30px
+} 
+
+* {box-sizing: border-box}
+
+
+.mySlides {display: none}
+#img {
+  border-radius: 25px;
+  vertical-align: middle;}
+  
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin-top:70px ;
+  margin-bottom:auto ;
+  margin-right:auto ;
+  margin-left:auto ;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+*{
+margin: 0;
+padding: 0;
+}
+
+.logo img
+{
+width:55px;
+height:52px;
+float:left;
+margin-top: 5px;
+margin-bottom: 5px;
+margin-left: 180px;
+}
+.fa-email
+{
+
+margin-top:5px;
+}
+h4
+{
+background:#29ca8e;
+text-align: right;
+padding: 2px 30px;
+}
+
+.i{float: left;
+color: white;}
+i
+{
+
+text-decoration: none;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 15px;
+
+}
+header
+{
+border-top: 10px solid #29ca8e;
+}
+.top a
+{
+text-decoration: none;
+color:white ;
+}
+
+main
+{
+
+background-color:#ededea
+height: 85vh;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: scroll;
+margin-top: 60px;
+margin-bottom: 5px;
+}
+.fcis
+{
+float:left;
+list-style: none;
+margin-top:20px;
+}
+.fcis li
+{
+display: inline-block;
+}
+.fcis li a 
+{
+color: #black;
+text-decoration: none;
+font-weight: bold;
+padding: 5px 10px;
+font-family: verdana, Helvetica, sans-serif;
+font-size: 15px;
+}
+.top2
+{
+margin-left: 0px;
+margin-top: 5px;
+}
+.mainnavbar
+{
+float:right;
+list-style: none;
+margin-top:20px;
+
+
+}
+.mainnavbar > li
+{
+display: inline-block;
+
+}
+.mainnavbar li a 
+{
+color:#29ca8e ;
+text-decoration: none;
+font-weight: bold;
+padding: 5px 15px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 15px;
+}
+.mainnavbar li.activee a
+{
+color:white;
+background-color: #29ca8e;
+}
+.mainnavbar li a:hover,.mainnavbar li a:active
+{
+color:white;
+background-color: #29ca8e;
+
+}
+
+.navbar
+{
+max-width: 1100px;
+margin-left: 100px;
+}
+#img
+{
+height: 75vh;
+width: 140vh;
+}
+
+.submenue
+{
+display:none;
+list-style-type:none;
+position:absolute;
+border:5px solid white;
+margin-top:0px;
+margin-left:-3px;
+text-align:left;
+box-shadow:1px 1px 1px grey;
+z-index: 99 !important; 
+
+}
+.submenue:before
+{
+content:"";
+width:0px;
+height:0px;
+position:absolute;
+color:white;
+border-left:20px solid transparent;
+border-right:20px solid transparent;
+border-bottom:30px solid transparent;
+margin:-30px 0px 0px 60px;
+}
+
+.submenue li:hover
+{backgroung:#36f;
+}
+.submenue > li{
+padding:10px;
+color:white;
+background:#ddd;
+font-size:20px;
+transition:.4s;
+}
+.mainnavbar li:hover .submenue
+{
+display:block;
+}
+
+#h44
+{
+border-bottom:0px;
+
+}
+#sectionn{
+margin-top:60px;
+padding:0px;
+font-family: 'Open Sans', sans-serif;
+
+}
+.wrapperr
+{
+width:85%;
+min-height:100px;
+top:50%;
+transform:translateY(-50%);
+margin-left:240px;
+}
+.columnn{
+position:relative;
+width:20%;
+height:360px;
+float:left;
+overflow:hidden;
+}
+.columnn .imgbx{
+position:relative;
+background:#eeeeee;
+}
+
+.columnn .imgbx img
+{
+max-width:100%;
+transition:1s;
+background:#eeeeee;
+}
+.columnn:hover .imgbx img
+{
+transform:scale(1.5);
+}
+.columnn .detailss 
+{
+position:absolute;
+top:10px;
+left:10px;
+right:10px;
+bottom:65px;
+background:#FFF;
+text-align:center;
+transition:.5s;
+transform:scale(.5);
+visibility:hidden;
+}
+.columnn:hover .detailss 
+{ 
+transform:scale(1);
+visibility:visible;
+}
+.columnn .detailss .contentt
+{
+position:absolute;
+top:55%;
+left:50%;
+transform:translate(-50%,-50%);
+width:100%;
+box-sizing:border-box;
+}
+.columnn .detailss .contentt h1
+{
+position:relative;
+margin:0;
+padding:0;
+font-size:20px;
+color:#262626 ;
+text-transform:uppercase;
+}
+.columnn .detailss .contentt h1 span
+{
+font-size:16px;
+color:#444;
+}
+.columnn .detailss .contentt h1:before
+{
+content:'';
+position:absolute;
+bottom:-10px;
+width:50px;
+height:2px;
+background:#f00;
+left:50%;
+transform:translateX(-50%);
+}
+.columnn .detailss .contentt ul{
+position:relative;
+display:flex;
+padding:0;
+width:70%;
+margin:30px auto 0;
+opacity:0;
+transform:translateY(100px);
+transition: .5s;
+}
+.columnn:hover .detailss .contentt ul{
+opacity:1;
+transform:translateY(0px);
+
+}
+.columnn .detailss .contentt ul li
+{
+list-style:none;
+width:25%;
+text-align:center;
+}
+.columnn .detailss .contentt ul li a
+{
+display:block;
+color:#262626;
+height:36px;
+width:36px;
+line-height:36px;
+border-radius:50%;
+box-sizing:border-box;
+border:1px solid #262626;
+
+}
+.columnn .detailss .contentt ul li a:hover
+{
+background:#f00;
+color:#fff;
+border:1px solid #f00;
+}
+
+</style>
+</head>
+<body>
+
+<h4 class="top">
+<div class="top2">
+<a href="loginweb.html"> Login </a>
+
+<a href="loginweb.html">| Register </a>
+<i class="i">
+<i class="fas fa-phone">
+ 
+<a href=""> 26831231 </a>
+ |  
+</i>
+<i class="material-icons">email
+</i>
+<i class="fas fa-email">
+ 
+<a href=" "> Info@asu.edu.eg</a>
+</i>
+</i>
+</div>
+</h4>
+<header>
+<div class="navbar">
+<div class="logo">
+<img  align="left" src="Pix\logo.png"/>
+</div>
+<div >
+<ul class="fcis">
+<li class="activee"><a href=""> Faculty of Computer Science </a></li>
+</div>
+<ul class="mainnavbar">
+<li class="activee"><a href="new.html"> HOME </a></li>
+<li><a href="gallery.html"> GALLERY </a></li>
+<li><a href="About.html"> ABOUT</a>
+<ul class="submenue ">
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="contactus.html">Contact us</a></li>
+        <li><a href="#">Our team</a></li>
+      </ul>
+
+    </li>
+
+</ul>
+</div>
+</header>
+
+<main>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img id="img" src="img_EDU1.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img id="img" src="img_EDU2.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img id="img" src="img_EDU3.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4/ 4</div>
+  <img id="img" src="img_EDU4.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span  class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+<section id="section">
+<svg viewBox="0 0 960 300">
+	<symbol id="s-text">
+		<text text-anchor="middle" x="50%" y="80%">testimonials</text>
+	</symbol>
+
+	<g class = "g-ants">
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+	</g>
+</svg>
+</section>
+<section class="section1">
+<div class="wrapper">
+   <div class="testimonial">
+   <div class="item" >
+   <div class="img" >
+   <img src="w.jpg">
+   </div>
+   <div class="name">Dr Yasmine</div>
+   <div class="content" >
+   <h1><i class="fas fa-quote-left"></i></h1>
+   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+   when an unknown printer took a galley of type and scrambled it 
+   to make a type specimen book</p>
+   <div class="stars">
+    <img src="starr.png">
+	<img src="starr.png">
+	<img src="starr.png">
+	<img src="starr.png">
+   </div>
+   </div>
+    </div>
+	<div class="item" >
+   <div class="img" >
+   <img src="e.jpg">
+   </div>
+   <div class="name">Dr manal</div>
+   <div class="content" >
+   <h1><i class="fas fa-quote-left"></i></h1>
+   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+   when an unknown printer took a galley of type and scrambled it 
+   to make a type specimen book</p>
+   <div class="stars">
+   <img src="starr.png">
+    <img src="greyy.png">
+   <img src="greyy.png">
+  <img src="greyy.png">
+   </div>
+   </div>
+    </div>
+	<div class="item" >
+   <div class="img" >
+   <img src="r.jpg">
+   </div>
+   <div class="name">Dr mahmoud</div>
+   <div class="content" >
+   <h1><i class="fas fa-quote-left"></i></h1>
+   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+   when an unknown printer took a galley of type and scrambled it 
+   to make a type specimen book</p>
+   <div class="stars">
+   <img src="starr.png">
+   <img src="greyy.png">
+   <img src="greyy.png">
+     <img src="greyy.png">
+   </div>
+   </div>
+    </div>
+	<div class="clear"></div>
+	 </div>
+	  </div>
+	  </section>
+	  <section id="section">
+<svg viewBox="0 0 960 300">
+	<symbol id="l-text">
+		<text text-anchor="middle" x="50%" y="80%">Our team</text>
+	</symbol>
+
+	<g class = "g-ants">
+		<use xlink:href="#l-text" class="textt-copy"></use>
+		<use xlink:href="#l-text" class="textt-copy"></use>
+		<use xlink:href="#l-text" class="textt-copy"></use>
+		<use xlink:href="#l-text" class="textt-copy"></use>
+		<use xlink:href="#l-text" class="textt-copy"></use>
+	</g>
+</svg>
+</section>
+<section id="sectionn">
+<div class="wrapperr">
+<div class="columnn">
+<div class="imgbx">
+<img src="farah.jpg">
+</div>
+<div class="detailss">
+<div class="contentt">
+<h1> Farah<br><span>Developer</span></h1>
+
+<ul>
+<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="columnn">
+<div class="imgbx">
+<img src="SHAMY.jpg">
+</div>
+<div class="detailss">
+<div class="contentt">
+<h1> Shamy<br><span>Developer</span></h1>
+
+<ul>
+<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="columnn">
+<div class="imgbx">
+<img src="LOGY.jpg">
+</div>
+<div class="detailss">
+<div class="contentt">
+<h1> Logy<br><span>Developer</span></h1>
+
+<ul>
+<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="columnn">
+<div class="imgbx">
+<img src="JIMMY.jpg">
+</div>
+<div class="detailss">
+<div class="contentt">
+<h1> Jimmy<br><span>Developer</span></h1>
+
+<ul>
+<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+	  </section>
+
+     
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</main>
+</body>
+</html>

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head >
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" >
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<title>educational website</title>
+<style>
+*{
+margin: 0;
+padding: 0;
+}
+
+.bubbles li
+{
+position:absolute;
+list-style:none;
+display:black;
+background-color:rgba(255,255,255,0.3);
+bottom:-100px;
+animation:square 20s infinite;
+transition-timing-function:linear;
+}
+.bubbles li:nth-child(1)
+{
+width:40px;
+height:40px;
+left:20%;
+}
+.bubbles li:nth-child(2)
+{
+width:60px;
+height:60px;
+left:40%;
+animation_delay:2s;
+animation-duration:17s;
+}
+.bubbles li:nth-child(3)
+{
+width:10px;
+height:10px;
+left:60%;
+animation_delay:4s;
+animation-duration:13s;
+}
+.bubbles li:nth-child(4)
+{
+width:80px;
+height:80px;
+left:80%;
+animation_delay:1s;
+animation-duration:22s;
+}
+.bubbles li:nth-child(5)
+{
+width:50px;
+height:50px;
+left:50%;
+animation_delay:7s;
+animation-duration:12s;
+}
+.bubbles li:nth-child(6)
+{
+width:90px;
+height:90px;
+left:10%;
+animation_delay:3s;
+animation-duration:25s;
+}
+.bubbles li:nth-child(7)
+{
+width:30px;
+height:30px;
+left:30%;
+animation_delay:4s;
+animation-duration:12s;
+}
+.bubbles li:nth-child(8)
+{
+width:70px;
+height:70px;
+left:70%;
+animation_delay:7s;
+animation-duration:20s;
+}
+@keyframes square
+{
+0%
+{
+-webkit-transform:translatey(0);
+transform:translatey(0);
+}
+100%
+{
+-webkit-transform:translatey(-1080px) rotate(630deg);
+transform:translatey(-1080px) rotate(630deg);
+}
+}
+body
+{
+z-index:1;
+overflow-y:hidden;
+overflow-x:hidden;
+}
+.animate-me {
+  -webkit-animation: bgcolorchange 10s infinite;
+  animation: 8s infinite bgcolorchange;
+}
+@keyframes bgcolorchange {
+  0% {
+    background-color:#8C8984 ;
+  }
+  25% {
+    background-color: #99abb9;
+  }
+  50% {
+    background-color: #7A9D96;
+  }
+  75% {
+    background-color: #c6d5cd;
+  }
+  100% {
+    background-color:#99abb9;
+  }
+}
+
+.logo img
+{
+width:55px;
+height:52px;
+float:left;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+.fa-email
+{
+
+margin-top:2px;
+}
+
+
+h4
+{
+background:#00416D;
+text-align: right;
+padding: 4px 30px;
+}
+i
+{
+float: left;
+color: white;
+text-decoration: none;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 15px;
+
+}
+header
+{
+border-top: 10px solid #00416D;
+}
+.top a
+{
+text-decoration: none;
+color:white ;
+}
+.top2
+{
+margin-left: 0px;
+margin-top: 10px;
+}
+.fcis
+{
+float:left;
+list-style: none;
+margin-top:20px;
+}
+.fcis li
+{
+display: inline-block;
+}
+.fcis li a 
+{
+color: white;
+text-decoration: none;
+font-weight: bold;
+padding: 5px 10px;
+font-family: verdana, Helvetica, sans-serif;
+font-size: 15px;
+}
+.mainnavbar
+{
+float:right;
+list-style: none;
+margin-top:20px;
+
+}
+
+.mainnavbar > li
+{
+display: inline-block;
+
+}
+.mainnavbar li a 
+{
+color: white;
+text-decoration: none;
+font-weight: bold;
+padding: 5px 15px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 15px;
+}
+.mainnavbar li.active a
+{
+color:white;
+background-color: #00416D;
+}
+.mainnavbar li a:hover,.mainnavbar li a:active
+{
+color:white;
+background-color:#00416D;
+
+}
+body
+{
+font-family: "roboto", sans-serif;
+font-family:monodpace;
+}
+.navbar
+{
+max-width: 1100px;
+margin-left: 200px;
+background:#014955;
+
+}
+.submenue
+{
+display:none;
+list-style-type:none;
+position:absolute;
+border:5px solid white;
+margin-top:0px;
+margin-left:-3px;
+text-align:left;
+box-shadow:1px 1px 1px grey;
+z-index: 99 !important; 
+
+}
+.submenue:before
+{
+content:"";
+width:0px;
+height:0px;
+position:absolute;
+color:white;
+border-left:20px solid transparent;
+border-right:20px solid transparent;
+border-bottom:30px solid transparent;
+margin:-30px 0px 0px 60px;
+}
+
+.submenue li:hover
+{backgroung:#36f;
+}
+.submenue > li{
+padding:10px;
+color:white;
+background:#ddd;
+font-size:20px;
+transition:.4s;
+}
+.mainnavbar li:hover .submenue
+{
+display:block;
+}
+.loginpage{
+width:360px;
+padding: 9% 35% 0;
+margin-top:0px;
+}
+.form
+{
+position:relative;
+z-index:1;
+background: #8ac6d1;
+border-radius: 25px;
+max-width:360px;
+margin:0 auto 100px;
+padding:45px;
+text-align:center;
+box-shadow: 10px 10px grey;
+}
+
+.form input
+{
+font-family:"roboto",sans-serif;
+outline:1;
+background:#f2f2f2;
+width:100%;
+border:0;
+padding:15px;
+margin:0 0 15px;
+box-sizing:border-box;
+font-size:14px;
+}
+.form button
+{
+font-family:"roboto",sans-serif;
+text-transform:uppercase;
+outline:0;
+background:#00416D;
+width:50%;
+border:0;
+padding:15px;
+color:white;
+font-size:14px;
+border-radius: 25px;
+cursor:pointer;
+}
+.form button:hover,.form button:active
+{
+background:#014955;
+}
+.form .message
+{
+margin: 15px 0 0;
+color:aliceblue;
+font-size:15px;
+}
+.form .message a
+{
+color:#00416D;
+text-decoration:none;
+font-weight: bold
+}
+.form  .registerpage
+{
+display:none;
+}
+h3
+{
+margin-top:70px;
+margin-left:16%;
+margin-right:16%;
+text-align:center;
+color: white;
+font-size:18px;
+font-family: "Times New Roman", Times, serif;
+font-style: oblique;
+}
+
+</style>
+</head>
+<body class="animate-me" >
+<h4 class="top">
+<div class="active" class="top2">
+<a href="loginweb.html"> Login </a>
+
+<a href="register.html">| Register </a>
+<i class="fas fa-phone">
+ 
+<a href=""> 26831231 </a>
+ |  
+</i>
+<i class="material-icons">email
+</i>
+<i class="fas fa-email">
+ 
+<a href=" "> Info@asu.edu.eg</a>
+</i>
+</div>
+</h4>
+<header>
+<div class="navbar">
+<div class="logo">
+<img  align="left" src="Pix\logo.png"/>
+</div>
+<div >
+<ul class="fcis">
+<li class="active"><a href=""> Faculty of Computer Science </a></li>
+</div>
+<ul class="mainnavbar">
+<li ><a href="new.html"> HOME </a></li>
+<li><a href="gallery.html"> GALLERY </a></li>
+<li><a href="About.html"> ABOUT</a>
+<ul class="submenue ">
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="contactus.html">Contact us</a></li>
+        <li><a href="#">Our team</a></li>
+      </ul>
+
+    </li>
+
+</ul>
+</div>
+</header>
+<main >
+<ul class="bubbles">
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<div class="loginpage">
+<div class="form">
+<form autocomplete="off" name="myform" class="registerpage">
+<input type="text" name="name" placeholder="First name"/>
+<input type="text" name="lastname" placeholder="Last name"/>
+<input type="text" name="id" placeholder="Id" />
+<input type="password" id="psw" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required/>
+<input type="text" name="email" placeholder="Email"/>
+<button onclick="return validateform()" >creat</button>
+<p class="message">Already registered? <a href="#">login</a>
+</p>
+</form>
+<form autocomplete="off" name="myform2" class="login-form">
+<input type="text" name="name2" placeholder="Username"/>
+<input type="password" name="password2" placeholder="Password"/>
+<button onclick="return validateform2()">login</button>
+<p class="message">Not registered? <a href="#">Register</a>
+</p>
+</form>
+</div>
+</div>
+<div>
+<h3>
+Through this form you can login using your academic e-mail at the Faculty of Computing and Information - Ain Shams University.
+If you are not registered Please complete the registration form below and then go to the faculty's IT department to check your identity
+ from 9:30 pm to 1:00 pm except Fridays and Saturdays.
+ Please bring your university card and ID card.
+</h3>
+</div>
+<script src='https://code.jquery.com/jquery-3.4.1.min.js'>
+</script>
+<script>
+$('.message a').click(function(){
+$('form').animate({height:"toggle", opacity:"toggle"},"slow");});
+</script>
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var lastname=document.myform.lastname.value;
+var id=document.myform.id.value; 
+var password=document.myform.password.value; 
+var email=document.myform.email.value;  
+var atposition=email.indexOf("@");  
+var dotposition=email.lastIndexOf(".");  
+if (name==null || name==""){  
+  alert("First Name can't be blank");  
+  return false;  
+}
+else if (lastname==null || lastname==""){  
+  alert("Last Name can't be blank");  
+  return false;  
+}
+else if (id==null || id==""){  
+  alert("ID can't be blank");  
+  return false;  
+} 
+else if (atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length){  
+  alert("Please enter a valid e-mail address");  
+  return false;  
+  }  
+} 
+</script>
+<script>  
+function validateform2(){  
+var name2 =document.myform2.name2.value;  
+var password2=document.myform2.password2.value; 
+if (name2==null || name2==""){  
+  alert("Please enter your name");  
+  return false;  
+}
+else if (password2==null || password2==""){  
+  alert("Please enter your password");  
+  return false;
+}
+}
+</script>
+</main>
+</body>
+</html>

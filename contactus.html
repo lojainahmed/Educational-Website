@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Cabin+Condensed:700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" >
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<title>educational website</title>
+<style>
+body
+{
+  text-align: center;
+  background :#141414 url(beach.jpg);
+  background-size: cover;
+  background-position :50%;
+  height: 100vh;}
+
+svg{
+ position:absolute;
+  top :20%;
+  margin-top: -60px;
+  left: 50%;
+  margin-left: -225px;}
+  *
+{
+margin:0;
+padding:0;
+
+}
+.contactsection
+{
+font-family:"montserrat",sans-serif;
+padding:80px 0;
+margin-top:160px;
+}
+
+.border
+{
+height:10px;
+width:100px;
+background:#34495e;
+margin: 40px auto;
+}
+.contactform
+{
+max-width:600px;
+margin:auto;
+padding 0 10px;
+overflow:hidden;
+}
+.contactformtext
+{
+ border-radius: 25px;
+display:block;
+width:100%;
+box-sizing:border-box;
+margin:16px 0;
+border:0;
+background:#99581;
+padding:20px 40px;
+outline:none;
+color:black;
+transition:0.5s;
+}
+.contactformtext:focus,.contactformtext:hover
+{
+box-shadow:0 0 4px 4px #34495e;
+}
+textarea.contactformtext
+{ 
+resize:none;
+height:120px;
+}
+.contactformbtn
+{
+float:right;
+border:0;
+background:#34495e
+color:#fff;
+padding: 12px 50px;
+border-radius:20px;
+cursor:pointer;
+transition:0.5s
+}
+.contactformbtn:hover
+{
+background:#2980b9;
+}
+.logo img
+{
+width:55px;
+height:52px;
+float:left;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+.fa-email
+{
+
+margin-top:2px;
+}
+
+h4
+{
+background:#3b3b3c;
+text-align: right;
+padding: 4px 30px;
+}
+i
+{
+float: left;
+color: white;
+text-decoration: none;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 15px;
+
+}
+header
+{
+border-top: 10px solid #3b3b3c;
+}
+.top a
+{
+text-decoration: none;
+color:white ;
+}
+.top2
+{
+margin-left: 0px;
+margin-top: 10px;
+}
+.fcis
+{
+float:left;
+list-style: none;
+margin-top:20px;
+}
+.fcis li
+{
+display: inline-block;
+}
+.fcis li a 
+{
+color:#3b3b3c;
+text-decoration: none;
+font-weight: bold;
+padding: 5px 10px;
+font-family: verdana, Helvetica, sans-serif;
+font-size: 15px;
+}
+.mainnavbar
+{
+float:right;
+list-style: none;
+margin-top:20px;
+
+}
+
+.mainnavbar > li
+{
+display: inline-block;
+
+}
+.mainnavbar li a 
+{
+color: #3b3b3c;
+text-decoration: none;
+font-weight: bold;
+padding: 5px 15px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 15px;
+}
+.mainnavbar li.active a
+{
+color:white;
+background-color: #3b3b3c;
+}
+.mainnavbar li a:hover,.mainnavbar li a:active
+{
+color:white;
+background-color: #3b3b3c;
+
+}
+
+.navbar
+{
+max-width: 1100px;
+margin-left: 200px;
+}.submenue
+{
+display:none;
+list-style-type:none;
+position:absolute;
+border:5px solid white;
+margin-top:0px;
+margin-left:-3px;
+text-align:left;
+box-shadow:1px 1px 1px grey;
+z-index: 99 !important; 
+
+}
+.submenue:before
+{
+content:"";
+width:0px;
+height:0px;
+position:absolute;
+color:white;
+border-left:20px solid transparent;
+border-right:20px solid transparent;
+border-bottom:30px solid transparent;
+margin:-30px 0px 0px 60px;
+}
+
+.submenue li:hover
+{backgroung:#36f;
+}
+.submenue > li{
+padding:10px;
+color:white;
+background:#ddd;
+font-size:20px;
+transition:.4s;
+}
+.mainnavbar li:hover .submenue
+{
+display:block;
+}
+
+</style>
+</head>
+<body>
+<h4 class="top">
+<div class="active" class="top2">
+<a href="loginweb.html"> Login </a>
+
+<a href="register.html">| Register </a>
+<i class="fas fa-phone">
+ 
+<a href=""> 26831231 </a>
+ |  
+</i>
+<i class="material-icons">email
+</i>
+<i class="fas fa-email">
+ 
+<a href=" "> Info@asu.edu.eg</a>
+</i>
+</div>
+</h4>
+<header>
+<div class="navbar">
+<div class="logo">
+<img  align="left" src="Pix\logo.png"/>
+</div>
+<div >
+<ul class="fcis">
+<li class="active"><a href=""> Faculty of Computer Science </a></li>
+</div>
+<ul class="mainnavbar">
+<li ><a href="new.html" target ="_blank" > HOME </a></li>
+<li><a href="gallery.html" target ="_blank"> GALLERY </a></li>
+<li><a class="activee" href="#"> ABOUT</a>
+<ul class="submenue ">
+        <li><a href="aboutus.html" target ="_blank">About us</a></li>
+        <li><a class="activee" href="contactus" target ="_blank">Contact us</a></li>
+        <li><a href="#">Our team</a></li>
+      </ul>
+
+    </li>
+
+</ul>
+</div>
+
+
+<div>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="450px" height="240px" xml:space="preserve">
+  <defs>
+    <pattern id="water" width=".25" height="1.1" patternContentUnits="objectBoundingBox">
+      <path fill="#000" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,1z"/>
+    </pattern>
+    
+    <text id="text" transform="translate(2,116)" font-family="'Cabin Condensed'" font-size="155.047">Contact</text>
+    
+    <mask id="text-mask">
+      <use x="0" y="0" xlink:href="#text" opacity="1" fill="#ffffff"/>
+    </mask>
+    
+    <g id="eff">
+      <use x="0" y="0" xlink:href="#text" fill="#a2a3a5"/>
+  
+  <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" x="-300" y="50" width="1200" height="120" opacity="0.3">
+    <animate attributeType="xml" attributeName="x" from="-300" to="0" repeatCount="indefinite" dur="2s"/>
+  </rect>
+   <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="45" width="1600" height="120" opacity="0.3">
+    <animate attributeType="xml" attributeName="x" from="-400" to="0" repeatCount="indefinite" dur="3s"/>
+  </rect>
+      
+  <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="55" width="800" height="120" opacity="0.3">
+    <animate attributeType="xml" attributeName="x" from="-200" to="0" repeatCount="indefinite" dur="1.4s"/>
+  </rect>
+      <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="55" width="2000" height="120" opacity="0.3">
+    <animate attributeType="xml" attributeName="x" from="-500" to="0" repeatCount="indefinite" dur="2.8s"/>
+  </rect>
+    </g>
+  </defs>
+ 
+	  <use xlink:href="#eff" opacity="0.9" style="mix-blend-mode:color-burn"/>
+
+</svg>
+<div class="contactsection">
+<form class="contactform"  method="post">
+<input type="text" class="contactformtext" placeholder="Your name">
+<input type="email" class="contactformtext" placeholder="Your email">
+<input type="text" class="contactformtext" placeholder="Your phone">
+<textarea class="contactformtext" placeholder="Your meassage"></textarea>
+<input type="submit" class="contactformbtn" value="send"> 
+</form>
+</div>
+
+</div>
+</body>
+</html>
